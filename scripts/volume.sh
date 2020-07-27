@@ -1,6 +1,6 @@
 #!/bin/sh
 
-status=$(amixer sget Master | taile -n1 | sed -r "s/.*\[(.*)\]/\1/")
+status=$(amixer get Master | tail -n1 | sed -r "s/.*\[(.*)\]/\1/")
 vol=$(amixer get Master | tail -n1 | sed -r "s/.*\[(.*)%\].*/\1/")
 
 off=婢
