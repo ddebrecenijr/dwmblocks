@@ -18,5 +18,5 @@ elif [[ $vol < 25 ]]; then
 elif [[ $vol < 75 ]]; then
     echo " $med $vol% "
 else
-    echo " $high $vol %"
+    echo " $high $vol% "
 fi
