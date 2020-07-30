@@ -10,13 +10,13 @@ high=
 mute=ﱝ
 
 if [[ $status == "off" ]]; then
-    echo " $mute MUTED "
+    echo "$mute MUTED"
 elif [[ $vol == 0 ]]; then
-    echo " $off $vol% "
+    echo "$off $vol%"
 elif [[ $vol < 25 ]]; then
-    echo " $low $vol% "
+    echo "$low $vol%"
 elif [[ $vol < 75 ]]; then
-    echo " $med $vol% "
+    echo "$med $vol%"
 else
-    echo " $high $vol% "
+    echo "$high $vol%"
 fi
