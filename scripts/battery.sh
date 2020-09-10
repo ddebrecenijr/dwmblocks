@@ -17,34 +17,28 @@ rampFull=
 batteryLow=
 batteryCharging=
 
-resetColor=^d^
-greenColor=^c#46ea4b^
-yellowColor=^c#eef43a^
-redColor=^c#d82417^
-
-
 if [[ $status == "Charging" ]]; then
-    echo "$greenColor $batteryCharging $resetColor$battery%"
+    echo " $batteryCharging $battery% "
 elif [[ $battery -lt 5 ]]; then
-    echo "$redColor $batteryLow $resetColor$battery%"
+    echo " $batteryLow $battery% "
 elif [[ $battery -lt 10 ]]; then
-    echo "$redColor $ramp10 $resetColor$battery%"
+    echo " $ramp10 $battery% "
 elif [[ $battery -lt 20 ]]; then
-    echo "$redColor $ramp20 $resetColor$battery%"
+    echo " $ramp20 $battery% "
 elif [[ $battery -lt 30 ]]; then
-    echo "$yellowColor $ramp30 $resetColor$battery%"
+    echo " $ramp30 $battery% "
 elif [[ $battery -lt 40 ]]; then
-    echo "$yellowColor $ramp40 $resetColor$battery%"
+    echo " $ramp40 $battery% "
 elif [[ $battery -lt 50 ]]; then
-    echo "$yellowColor $ramp50 $resetColor$battery%"
+    echo " $ramp50 $battery% "
 elif [[ $battery -lt 60 ]]; then
-    echo $yellowColor "$ramp60 $resetColor$battery%"
+    echo  "$ramp60 $battery% "
 elif [[ $battery -lt 70 ]]; then
-    echo "$yellowColor $ramp70 $resetColor$battery%"
+    echo " $ramp70 $battery% "
 elif [[ $battery -lt 80 ]]; then
-    echo "$greenColor $ramp80 $resetColor$battery%"
+    echo " $ramp80 $battery% "
 elif [[ $battery -lt 90 ]]; then
-    echo "$greenColor $ramp90 $resetColor$battery%"
+    echo " $ramp90 $battery% "
 else
-    echo "$greenColor $rampFull $resetColor$battery%"
+    echo " $rampFull $battery% "
 fi

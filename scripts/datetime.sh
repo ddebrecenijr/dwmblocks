@@ -1,4 +1,4 @@
 #!/bin/sh
-date=$(date +"%a, %b %d %H:%M")
+date=$(date +"%b %e, %R")
 icon=''
-echo "$icon $date "
+echo " $icon $date "
